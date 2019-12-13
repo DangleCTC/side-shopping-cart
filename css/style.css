@@ -410,6 +410,9 @@ main {
   animation: cd-fade-in 0.3s;
 }
 
+li{
+  word-wrap: normal;
+}
 /* -------------------------------- 
 
 xkeyframes 
