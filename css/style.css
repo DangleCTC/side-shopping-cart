@@ -18,7 +18,7 @@ body {
   font-size: 100%;
   font-family: "PT Sans", sans-serif;
   color: #31353d;
-  background-color: #eeeff7;
+  background-color: #E5E5E6;
 }
 body.overflow-hidden {
   /* prevent 2 vertical scrollbars on ie and firefox when the cart is visible */
@@ -39,19 +39,6 @@ img {
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
-  /* this class is used to horizontally align the gallery of items */
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
 
 .cd-img-replace {
   /* replace text with a background-image */
@@ -72,7 +59,7 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background: #31353d;
+  background: #354953;
   text-align: center;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   z-index: 4;
@@ -294,6 +281,13 @@ header {
 #cd-cart .cd-cart-total {
   padding-top: 1em;
   padding-bottom: 1em;
+  text-align: center;
+  background-color: #e0e6ef;
+}
+#cd-cart h4{
+  font-weight: 600;
+  
+
 }
 #cd-cart .cd-cart-total span {
   float: right;
@@ -309,12 +303,12 @@ header {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background: #7dcf85;
+  background: #37B99C;
   color: #FFF;
   text-align: center;
 }
 .no-touch #cd-cart .checkout-btn:hover {
-  background: #a2dda8;
+  background: #55dbbe;
 }
 #cd-cart .cd-go-to-cart {
   text-align: center;
@@ -343,7 +337,7 @@ xgallery
 main {
   position: relative;
   min-height: 100%;
-  background: #eeeff7;
+  background: #E5E5E6;
   padding-top: 70px;
   z-index: 1;
 }
@@ -391,7 +385,12 @@ main {
     margin-right: 0;
   }
 }
-
+.first{
+  display: inline-block;
+}
+.second{
+  display: inline-block;
+}
 #cd-shadow-layer {
   position: fixed;
   min-height: 100%;
@@ -410,9 +409,49 @@ main {
   animation: cd-fade-in 0.3s;
 }
 
-li{
-  word-wrap: normal;
+/* ---------------------------------
+
+Styles for groundwork
+
+--------------------------------*/
+
+.card-body {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
 }
+
+.cart-item-padding{
+  padding: 0px 10px 0px 10px!important;
+}
+
+.box{
+    height:300px;
+    background-color: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+::-webkit-scrollbar{
+    width:20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color:white;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(194, 192, 192); 
+    /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+
 /* -------------------------------- 
 
 xkeyframes 
