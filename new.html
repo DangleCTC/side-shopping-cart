@@ -39,7 +39,8 @@
                     <img src="img/ac.jpg" width="150">
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-info">Select</button>
+                    <button type="button" data-toggle="collapse" data-target="#hi" aria-expanded="false"
+                        aria-controls="hi" class="btn btn-info">Select</button>
                 </div>
             </div>
             <div class="card" id="family">
@@ -88,35 +89,171 @@
                 </div>
             </div>
         </div>
-
         <div class="card-footer" id="footer">
             Please Select a System Type to Proceed
         </div>
     </div>
-
-    <div class="collapse" id="collapseExample">
-        <div class="card" id="product-card">
-            <div class="card card-header" id="product-card-header">
-                HEADER
+    <div class="container" id="product-card">
+        <div class="collapse" id="collapseExample">
+            <div class="card" id="product-card">
+                <div class="card card-header" id="product-card-header">
+                    <div class="row">
+                        <div class="col-3"> XV20i AC</div>
+                        <div class="col-3"> Model Number</div>
+                        <div class="col-6"> Details</div>
+                    </div>
+                </div>
+                <div class="card card-body" id="product-card-body">
+                    <div class="row">
+                        <div style="margin:auto 0px auto 0px;" class="col-3">
+                            <img src="img/ac.jpg" width="250"></div>
+                        <div style="margin:auto 0px auto 0px;" class="col-3">
+                            <button type="button" data-toggle="toggle" data-target="#demo" class="btn btn-info"
+                                id="model-btn">T4TTV0024A1000B</button>
+                            <button class="btn btn-info" id="model-btn">T4TTV0036B1000B</button>
+                            <button class="btn btn-info" id="model-btn">T4TTV0048A1000B</button>
+                            <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                            <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                            <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                        </div>
+                        <div style="margin:auto 0px auto 0px;" class="col-6">
+                            <div id="demo" class="table">
+                                <table >
+                                    <tbody>
+                                        <tr style="text-align: left;">
+                                            <td nowrap>Model Number:</td>
+                                            <td nowrap><span>T4TTV0024A1000B</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>Description:</td>
+                                            <td nowrap><span>R410A S/S HP 16 SEER 1.5T</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>AHRI :</td>
+                                            <td nowrap><span>8939403</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>EER Rating:</td>
+                                            <td nowrap><span>12.5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>SEER Rating:</td>
+                                            <td nowrap><span>14.75</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>hspf:</td>
+                                            <td nowrap><span>8.55</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>Heating Capacity:</td>
+                                            <td nowrap><span>17600</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap>Cooling Capacity:</td>
+                                            <td nowrap><span>18000</span></td>
+                                        </tr>
+                                        <hr>
+                                        <tr>
+                                            <td nowrap>Status:</td>
+                                            <td nowrap><span>Active</span> </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+                                            <td nowrap><button class="btn btn-info" id="product-card">Add to Cart</button></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card card-body" id="product-card-body">
-                <div class="row">
-                    <div class="col-3">
-                <img src="img/ac.jpg" width="250"></div>
-                <div class="col-3">
-                <button class="btn btn-info" id="model-btn">T4TTV0024A1000B</button>
-                <button class="btn btn-info" id="model-btn">T4TTV0036B1000B</button>
-                <button class="btn btn-info" id="model-btn">T4TTV0048A1000B</button>
-                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
-                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
-                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
-            </div></div></div>
-            <!-- <div class="card card-footer" id="product-card-footer">
-                        FOOTER
-                    </div> -->
         </div>
     </div>
-
+        <div class="container" id="product-card">
+            <div class="collapse" id="hi">
+                <div class="card" id="product-card">
+                    <div class="card card-header" id="product-card-header">
+                        <div class="row">
+                            <div class="col-3"> XV20i AC</div>
+                            <div class="col-3"> Model Number</div>
+                            <div class="col-6"> Details</div>
+                        </div>
+                    </div>
+                    <div class="card card-body" id="product-card-body">
+                        <div class="row">
+                            <div style="margin:auto 0px auto 0px;" class="col-3">
+                                <img src="img/ac.jpg" width="250"></div>
+                            <div style="margin:auto 0px auto 0px;" class="col-3">
+                                <button type="button" data-toggle="toggle" data-target="#demo" class="btn btn-info"
+                                    id="model-btn">T4TTV0024A1000B</button>
+                                <button class="btn btn-info" id="model-btn">T4TTV0036B1000B</button>
+                                <button class="btn btn-info" id="model-btn">T4TTV0048A1000B</button>
+                                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                                <button class="btn btn-info" id="model-btn">T4TTV0060A1000B</button>
+                            </div>
+                            <div style="margin:auto 0px auto 0px;" class="col-6">
+                                <div id="demo" class="table">
+                                    <table>
+                                        <tbody>
+                                            <tr style="text-align: left;">
+                                                <td nowrap>Model Number:</td>
+                                                <td nowrap><span>T4TTV0024A1000B</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>Description:</td>
+                                                <td nowrap><span>R410A S/S HP 16 SEER 1.5T</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>AHRI :</td>
+                                                <td nowrap><span>8939403</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>EER Rating:</td>
+                                                <td nowrap><span>12.5</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>SEER Rating:</td>
+                                                <td nowrap><span>14.75</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>hspf:</td>
+                                                <td nowrap><span>8.55</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>Heating Capacity:</td>
+                                                <td nowrap><span>17600</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td nowrap>Cooling Capacity:</td>
+                                                <td nowrap><span>18000</span></td>
+                                            </tr>
+                                            <hr>
+                                            <tr>
+                                                <td nowrap>Status:</td>
+                                                <td nowrap><span>Active</span> </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td nowrap><button class="btn btn-info" id="product-card">Add to Cart</button>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -126,6 +263,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="new.js"></script>
 </body>
 
 </html>

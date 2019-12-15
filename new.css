@@ -8,7 +8,7 @@ header{
     color:white;
 }
 body{
-background-color: #E5E5E6;
+    background-color: #E5E5E6;
 }
 
 /* div,.container{
@@ -18,22 +18,21 @@ background-color: #E5E5E6;
 .container{
     text-align: center;
    background-color: #F7F8F8;
-        /* overflow-x: overlay;
+    /* overflow-x: overlay;
     overflow-y: hidden;
     white-space: nowrap; */
     border-radius: .25rem;
-padding:0px;
-width:100%;
+    padding:0px;
+    width:100%;
 }
 
 .container:hover{
-                box-shadow: -1px -1px 50px 1px rgba(141, 137, 137, 0.5);
-
+    box-shadow: -1px -1px 50px 1px rgba(141, 137, 137, 0.5);
 }
+
 .box{
     height:500;
-   background-color: #F7F8F8;
-
+    background-color: #F7F8F8;
     padding-inline-start: 30px;
     padding-inline-end: 30px;
     overflow-x: overlay;
@@ -42,25 +41,24 @@ width:100%;
     width:100%;
     margin:auto;
 }
+
 *{
     box-sizing: border-box;
 }
-h3{
 
+h3{
     margin: auto!important;
 }
 
 hr{
     width:80%;
-
 }
-#family.card{
 
+#family.card{
     display: inline-block;
     width: 300px;
     text-align: center;
     margin: 15px 15px 15px 20px;
-    
 }
 
 .card-header{
@@ -70,10 +68,10 @@ background-color: #F1F3F4;
 }
 
 
-
 #footer.card-footer{
     text-align: center;
     background-color:#F1F3F4; 
+    margin-top:4px;
 }
 
 #model-btn.btn-info{
@@ -81,7 +79,7 @@ background-color: #F1F3F4;
 	box-shadow: 0 2px 5px rgba(0, 0, 0,.5);
     border:transparent;
     margin: 0px 20px 20px 0px;
-    width: 100%;
+    width: 65%;
 
 }
 .btn-info{
@@ -90,6 +88,7 @@ background-color: #F1F3F4;
     border:transparent;
     width: 100px;
 }
+
 .btn-info:hover{
     background-color: #354953;
 }
@@ -97,13 +96,13 @@ background-color: #F1F3F4;
         background-color: #354953;
     box-shadow: none;
 }
-.card .card-body{
-    height:100%;
-}
+
+/*----------------------------------------------------------------------------------
+        Styles for horizonal scroll bar
+------------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar{
     height:7px;
-
 }
 
 ::-webkit-scrollbar-track {
@@ -112,45 +111,100 @@ background-color: #F1F3F4;
     border-radius: 30;
     background-color:transparent;
     margin-inline-start: 3px;
-        margin-inline-end: 3px;
-
+    margin-inline-end: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgb(221, 221, 221); 
-
-
-    /* box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
 
 
+/* ------------------------------------------------------------------------------
+        Styles for Product Card
+-------------------------------------------------------------------------------*/
+
+#product-card.container{
+    margin: 15px auto 0px auto;
+    border-radius: 20px;
+}
 
 #product-card.card{
-
     text-align: center;
     border-radius: .25rem;
-    margin: 0px 113.2px 0px 113.2px;
-            margin: 10px 80px auto 150px;
-            box-shadow: -1px -1px 10px .5px rgba(245, 243, 243, 0.5);
-border: transparent;
+    box-shadow: -1px -1px 10px .5px rgba(245, 243, 243, 0.5);
+    border: transparent;
+    border-radius: 20px;
 }
-/* #product-card.container{
 
-        width:100%;
-} */
 #product-card-header.card-header{
-background-color: #354953;
-color:white;
+    background-color: #354953;
+    color:white;
+    font-size: 1.4rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
 
+.card .card-body{
+    height:100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#product-card.btn-info{
+    background-color: #37B99C;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.5);
+    border:transparent;
+    width:100%;         
+}
+
+#demo {    
+    -o-transition: width .8s ease;
+    -webkit-transition: width .8s ease;
+    -moz-transition: width .8s ease;   
+    transition: width .8s ease;
+    border-radius: .25rem;;
+    border:rgb(212, 212, 212) solid 1px;
+    overflow: hidden;
+    white-space: normal;
+    background: #E5E5E6;
+    vertical-align: left;
+    /* line-height: ; */
+    height: 100%;
+    width: 0px;
+}
+
+#demo.in {  
+    width: 96%;
+}
+
+tbody tr :nth-of-type(1){
+    text-align: right;
+    padding: 5px 25px 0px 25px;
+    font-weight: 500;
+}
+
+tbody tr :nth-of-type(2){
+    text-align: left;
+    margin:auto;
+    padding: 5px 0px 0px 0px;
+}
+
+tbody tr :nth-of-type(2) span {
+    /* text-align: left; */
+    /* color:black; */
+    /*  */
+    /*  */
+    /* border-block-end:rgb(190, 190, 190) solid 1px; ; */
+    border-block-end:rgb(190, 190, 190) solid 1px; 
+    text-align: left;
+    padding:0px 5px 0px 5px;
+    font-weight: initial;
 }
 
 
 
-#product-card-body.card-body{
-    vertical-align: 0;
-}
 
 /*------------------------------------------------
             GROUNDWORK COLORS
